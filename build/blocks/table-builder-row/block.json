@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenkit/table-builder-row",
+  "version": "1.0.0",
+  "title": "Table Row",
+  "category": "gutenkit",
+  "description": "Table Row for Gutenkit Pro.",
+  "parent": [
+    "gutenkit/table-builder"
+  ],
+  "attributes": {
+    "blockID": {
+      "type": "string"
+    },
+    "blockClass": {
+      "type": "string"
+    },
+    "blocksCSS": {
+      "type": "object"
+    },
+    "categoryName": {
+      "type": "string",
+      "default": "Gutenkit"
+    }
+  },
+  "usesContext": [
+    "gutenkit/table-headers",
+    "gutenkit/table-footers",
+    "gutenkit/table-rowCount",
+    "gutenkit/table-columnCount",
+    "gutenkit-pro/table-builder-hasHeader",
+    "gutenkit-pro/table-builder-hasFooter"
+  ],
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "textdomain": "table-builder-block",
+  "editorScript": "file:./index.js"
+}
